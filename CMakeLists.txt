@@ -13,10 +13,14 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(OpenGL REQUIRED)
 find_package(GLFW3 REQUIRED)
 
+add_definitions("-D SOPHUS_USE_BASIC_LOGGING")
+
 # SquareRootSAM
 set(SQUARE_ROOT_SAM_INCLUDE_DIRS
     ${CMAKE_SOURCE_DIR}/ThirdParty/eigen
+    ${CMAKE_SOURCE_DIR}/ThirdParty/sophus
     ${CMAKE_SOURCE_DIR}/SquareRootSAM/include
+
 )
 
 add_library(SquareRootSAM ${CMAKE_SOURCE_DIR}/SquareRootSAM/src/SquareRootSAM.cpp)
@@ -29,6 +33,7 @@ set(VIEWER_INCLUDE_DIRS
         ${GLFW3_INCLUDE_DIR}
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui
         ${CMAKE_SOURCE_DIR}/ThirdParty/eigen
+        ${CMAKE_SOURCE_DIR}/ThirdParty/sophus
         ${CMAKE_SOURCE_DIR}/SquareRootSAM/include
 )
 file(GLOB VIEWER_SRC_FILES

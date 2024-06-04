@@ -51,8 +51,8 @@ build cmake_object_order_depends_target_SquareRootSAM: phony || CMakeFiles/Squar
 
 build CMakeFiles/SquareRootSAM.dir/SquareRootSAM/src/SquareRootSAM.cpp.obj: CXX_COMPILER__SquareRootSAM_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/SquareRootSAM/src/SquareRootSAM.cpp || cmake_object_order_depends_target_SquareRootSAM
   DEP_FILE = CMakeFiles\SquareRootSAM.dir\SquareRootSAM\src\SquareRootSAM.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\SquareRootSAM.dir
   OBJECT_FILE_DIR = CMakeFiles\SquareRootSAM.dir\SquareRootSAM\src
 
@@ -83,64 +83,64 @@ build cmake_object_order_depends_target_Viewer: phony || cmake_object_order_depe
 
 build CMakeFiles/Viewer.dir/Viewer/Viewer.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/Viewer/Viewer.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\Viewer\Viewer.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\Viewer
 
 build CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj: C_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/src/glad.c || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\glad\src\glad.c.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\glad\src
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends\imgui_impl_glfw.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends\imgui_impl_opengl3.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_demo.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_demo.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_draw.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_tables.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__Viewer_unscanned_Release D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_widgets.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always   -D SOPHUS_USE_BASIC_LOGGING
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/sophus -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
