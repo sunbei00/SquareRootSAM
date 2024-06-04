@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: SquareRootSAM
+# Project: SquareRootSAM.cpp
 # Configurations: Debug
 # =============================================================================
 
@@ -41,74 +41,106 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/KOREATECH/code/SquareRootSAM/cmake-build-debug/
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target SquareRootSAM
+
+
+#############################################
+# Order-only phony target for SquareRootSAM
+
+build cmake_object_order_depends_target_SquareRootSAM: phony || CMakeFiles/SquareRootSAM.dir
+
+build CMakeFiles/SquareRootSAM.dir/SquareRootSAM/src/SquareRootSAM.cpp.obj: CXX_COMPILER__SquareRootSAM_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/SquareRootSAM/src/SquareRootSAM.cpp || cmake_object_order_depends_target_SquareRootSAM
+  DEP_FILE = CMakeFiles\SquareRootSAM.dir\SquareRootSAM\src\SquareRootSAM.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
+  OBJECT_DIR = CMakeFiles\SquareRootSAM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SquareRootSAM.dir\SquareRootSAM\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SquareRootSAM
+
+
+#############################################
+# Link the static library libSquareRootSAM.a
+
+build libSquareRootSAM.a: CXX_STATIC_LIBRARY_LINKER__SquareRootSAM_Debug CMakeFiles/SquareRootSAM.dir/SquareRootSAM/src/SquareRootSAM.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\SquareRootSAM.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libSquareRootSAM.a
+  TARGET_PDB = SquareRootSAM.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Viewer
 
 
 #############################################
 # Order-only phony target for Viewer
 
-build cmake_object_order_depends_target_Viewer: phony || CMakeFiles/Viewer.dir
+build cmake_object_order_depends_target_Viewer: phony || cmake_object_order_depends_target_SquareRootSAM
 
-build CMakeFiles/Viewer.dir/Viewer.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/Viewer.cpp || cmake_object_order_depends_target_Viewer
-  DEP_FILE = CMakeFiles\Viewer.dir\Viewer.cpp.obj.d
+build CMakeFiles/Viewer.dir/Viewer/Viewer.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/Viewer/Viewer.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\Viewer\Viewer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
-  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\Viewer
 
 build CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj: C_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/src/glad.c || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\glad\src\glad.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\glad\src
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends\imgui_impl_glfw.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends\imgui_impl_opengl3.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_demo.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_demo.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_draw.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_tables.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Viewer
   DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_widgets.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/eigen -ID:/KOREATECH/code/SquareRootSAM/SquareRootSAM/include
   OBJECT_DIR = CMakeFiles\Viewer.dir
   OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
@@ -120,9 +152,9 @@ build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable Viewer.exe
 
-build Viewer.exe: CXX_EXECUTABLE_LINKER__Viewer_Debug CMakeFiles/Viewer.dir/Viewer.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj | D$:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a
+build Viewer.exe: CXX_EXECUTABLE_LINKER__Viewer_Debug CMakeFiles/Viewer.dir/Viewer/Viewer.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj | D$:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a libSquareRootSAM.a || libSquareRootSAM.a
   FLAGS = -g
-  LINK_LIBRARIES = -lopengl32  D:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lopengl32  D:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a  libSquareRootSAM.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Viewer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -156,6 +188,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build SquareRootSAM: phony libSquareRootSAM.a
+
 build Viewer: phony Viewer.exe
 
 # =============================================================================
@@ -166,7 +200,7 @@ build Viewer: phony Viewer.exe
 #############################################
 # Folder: D:/KOREATECH/code/SquareRootSAM/cmake-build-debug
 
-build all: phony Viewer.exe
+build all: phony libSquareRootSAM.a Viewer.exe
 
 # =============================================================================
 # Built-in targets
