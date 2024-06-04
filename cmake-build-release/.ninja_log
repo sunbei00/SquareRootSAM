@@ -1,3 +1,18 @@
 # ninja log v6
-1	264	7391874140235767	CMakeFiles/SquareRootSAM.dir/main.cpp.obj	ae0490aae9297e5e
 265	323	7391874142868400	SquareRootSAM.exe	b1b4bf4b3c284f31
+10	329	7391946032745916	CMakeFiles/Viewer.dir/Viewer.cpp.obj	a5ac42b8d7233c37
+15	2582	7391944281852076	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj	580756a8c2c5d8bb
+5	203	7391946078333647	build.ninja	23e163f6792bf7f9
+22	4806	7391944281922687	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj	4398bee164ac096b
+19	2597	7391944281892696	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj	c67b0e52f97134f
+13	778	7391945630100552	CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj	2dffc0ea348d8a20
+14	7462	7391944281842078	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj	7c1bdb25255d961e
+17	4081	7391944281872676	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj	336aa5abf2547d08
+12	1478	7391944281822077	CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj	e1cdb14121360d37
+10	982	7391945630071327	CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj	f487ad9f38f95bde
+276	379	7391945877436203	Viewer.exe	d83ac891c693000
+13	2056	7391946186274219	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj	c67b0e52f97134f
+8	2288	7391946186224219	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj	580756a8c2c5d8bb
+11	3508	7391946186254230	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj	336aa5abf2547d08
+15	4241	7391946186294211	CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj	4398bee164ac096b
+4241	4340	7391946228554012	Viewer.exe	d83ac891c693000

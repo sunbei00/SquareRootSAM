@@ -41,37 +41,94 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/KOREATECH/code/SquareRootSAM/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target SquareRootSAM
+# Object build statements for EXECUTABLE target Viewer
 
 
 #############################################
-# Order-only phony target for SquareRootSAM
+# Order-only phony target for Viewer
 
-build cmake_object_order_depends_target_SquareRootSAM: phony || CMakeFiles/SquareRootSAM.dir
+build cmake_object_order_depends_target_Viewer: phony || CMakeFiles/Viewer.dir
 
-build CMakeFiles/SquareRootSAM.dir/main.cpp.obj: CXX_COMPILER__SquareRootSAM_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/main.cpp || cmake_object_order_depends_target_SquareRootSAM
-  DEP_FILE = CMakeFiles\SquareRootSAM.dir\main.cpp.obj.d
+build CMakeFiles/Viewer.dir/Viewer.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/Viewer.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\Viewer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\SquareRootSAM.dir
-  OBJECT_FILE_DIR = CMakeFiles\SquareRootSAM.dir
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir
+
+build CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj: C_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/src/glad.c || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\glad\src\glad.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\glad\src
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends\imgui_impl_glfw.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends\imgui_impl_opengl3.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui\backends
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_demo.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_demo.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_draw.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_tables.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
+
+build CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__Viewer_unscanned_Debug D$:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Viewer
+  DEP_FILE = CMakeFiles\Viewer.dir\ThirdParty\imgui\imgui_widgets.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/KOREATECH/code/SquareRootSAM/ThirdParty -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/glad/include -ID:/KOREATECH/Library/glfw-3.4_binary/include -ID:/KOREATECH/code/SquareRootSAM/ThirdParty/imgui
+  OBJECT_DIR = CMakeFiles\Viewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Viewer.dir\ThirdParty\imgui
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target SquareRootSAM
+# Link build statements for EXECUTABLE target Viewer
 
 
 #############################################
-# Link the executable SquareRootSAM.exe
+# Link the executable Viewer.exe
 
-build SquareRootSAM.exe: CXX_EXECUTABLE_LINKER__SquareRootSAM_Debug CMakeFiles/SquareRootSAM.dir/main.cpp.obj
+build Viewer.exe: CXX_EXECUTABLE_LINKER__Viewer_Debug CMakeFiles/Viewer.dir/Viewer.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/glad/src/glad.c.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_glfw.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_demo.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_draw.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_tables.cpp.obj CMakeFiles/Viewer.dir/ThirdParty/imgui/imgui_widgets.cpp.obj | D$:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\SquareRootSAM.dir
+  LINK_LIBRARIES = -lopengl32  D:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Viewer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = SquareRootSAM.exe
-  TARGET_IMPLIB = libSquareRootSAM.dll.a
-  TARGET_PDB = SquareRootSAM.exe.dbg
+  TARGET_FILE = Viewer.exe
+  TARGET_IMPLIB = libViewer.dll.a
+  TARGET_PDB = Viewer.exe.dbg
 
 
 #############################################
@@ -99,7 +156,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build SquareRootSAM: phony SquareRootSAM.exe
+build Viewer: phony Viewer.exe
 
 # =============================================================================
 # Folder targets.
@@ -109,12 +166,7 @@ build SquareRootSAM: phony SquareRootSAM.exe
 #############################################
 # Folder: D:/KOREATECH/code/SquareRootSAM/cmake-build-debug
 
-build all: phony SquareRootSAM.exe
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony Viewer.exe
 
 # =============================================================================
 # Built-in targets
@@ -123,14 +175,14 @@ build all: phony SquareRootSAM.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/KOREATECH/code/SquareRootSAM/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindOpenGL.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/KOREATECH/code/SquareRootSAM/CMakeLists.txt D$:/KOREATECH/code/SquareRootSAM/cmake/FindGLFW3.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/KOREATECH/code/SquareRootSAM/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindOpenGL.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion$ 2024.1.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/KOREATECH/code/SquareRootSAM/CMakeLists.txt D$:/KOREATECH/code/SquareRootSAM/cmake/FindGLFW3.cmake: phony
 
 
 #############################################
