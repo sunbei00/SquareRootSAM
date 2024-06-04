@@ -14,6 +14,7 @@ set(INCLUDE_DIRS
         ${CMAKE_SOURCE_DIR}/ThirdParty/glad/include
         ${GLFW3_INCLUDE_DIR}
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui
+        ${CMAKE_SOURCE_DIR}/ThirdParty/eigen
 )
 file(GLOB SRC_FILES
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui/*.cpp
