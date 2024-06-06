@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/SquareRootSAM"
+			"value" : "C:/Program Files (x86)/SquareRootSAM.cpp"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1294,18 +1294,6 @@
 			"value" : "[opengl32][c ][v()]"
 		},
 		{
-			"name" : "GLFW3_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for GLFW3."
-				}
-			],
-			"type" : "PATH",
-			"value" : "GLFW3_DIR-NOTFOUND"
-		},
-		{
 			"name" : "GLFW3_INCLUDE_DIR",
 			"properties" : 
 			[
@@ -1328,18 +1316,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "D:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a"
-		},
-		{
-			"name" : "ImGui_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for ImGui."
-				}
-			],
-			"type" : "PATH",
-			"value" : "ImGui_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_gl_LIBRARY",
@@ -1399,42 +1375,6 @@
 		},
 		{
 			"name" : "SquareRootSAM.cpp_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/KOREATECH/code/SquareRootSAM"
-		},
-		{
-			"name" : "SquareRootSAM_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/KOREATECH/code/SquareRootSAM/cmake-build-debug"
-		},
-		{
-			"name" : "SquareRootSAM_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "SquareRootSAM_SOURCE_DIR",
 			"properties" : 
 			[
 				{

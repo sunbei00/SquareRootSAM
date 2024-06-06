@@ -1,14 +1,23 @@
+//
+// Created by KwonSungMin on 2024-06-06.
+//
+
 #ifndef SQUAREROOTSAM_CPP_GRAPH_H
 #define SQUAREROOTSAM_CPP_GRAPH_H
-#include <eigen/Core>
+#include <FactorBase.h>
+#include <NodeBase.h>
+#include <vector>
 
 class Graph {
 public:
+    void addNode(NodeBase* node);
+    void addFactor(FactorBase* factor);
 
+    ~Graph();
 
-
-private:
-
+protected:
+    std::vector<NodeBase*> nodes;
+    std::vector<FactorBase*> factors;
 };
 
 

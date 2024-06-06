@@ -23,27 +23,33 @@ set(SQUARE_ROOT_SAM_INCLUDE_DIRS
 
 )
 
-add_library(SquareRootSAM ${CMAKE_SOURCE_DIR}/SquareRootSAM/src/SquareRootSAM.cpp)
+file(GLOB SQUARE_ROOT_SAM_SRC_DIRS
+        ${CMAKE_SOURCE_DIR}/SquareRootSAM/src/*.cpp
+)
+
+
+add_library(SquareRootSAM ${SQUARE_ROOT_SAM_SRC_DIRS})
 target_include_directories(SquareRootSAM PUBLIC ${SQUARE_ROOT_SAM_INCLUDE_DIRS})
 
 # Viewer
 set(VIEWER_INCLUDE_DIRS
         ${CMAKE_SOURCE_DIR}/ThirdParty/
         ${CMAKE_SOURCE_DIR}/ThirdParty/glad/include
-        ${GLFW3_INCLUDE_DIR}
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui
         ${CMAKE_SOURCE_DIR}/ThirdParty/eigen
         ${CMAKE_SOURCE_DIR}/ThirdParty/sophus
         ${CMAKE_SOURCE_DIR}/SquareRootSAM/include
+        ${GLFW3_INCLUDE_DIR}
+        ${CMAKE_SOURCE_DIR}/Viewer/include
 )
 file(GLOB VIEWER_SRC_FILES
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui/*.cpp
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui/backends/imgui_impl_glfw.cpp
         ${CMAKE_SOURCE_DIR}/ThirdParty/imgui/backends/imgui_impl_opengl3.cpp
-
         ${CMAKE_SOURCE_DIR}/ThirdParty/glad/src/glad.c
+        ${CMAKE_SOURCE_DIR}/Viewer/src/*.cpp
 )
 
-add_executable(Viewer ${CMAKE_SOURCE_DIR}/Viewer/Viewer.cpp ${VIEWER_SRC_FILES})
+add_executable(Viewer ${VIEWER_SRC_FILES})
 target_include_directories(Viewer PRIVATE ${VIEWER_INCLUDE_DIRS})
 target_link_libraries(Viewer PRIVATE OpenGL::GL ${GLFW3_LIBRARY} SquareRootSAM)

@@ -4,7 +4,7 @@
 #include <imgui/backends/imgui_impl_glfw.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
 #include <iostream>
-#include <SquareRootSAM.h>
+#include "SquareRootSAM.h"
 
 // GLFW error callback
 void glfw_error_callback(int error, const char* description) {
@@ -12,6 +12,11 @@ void glfw_error_callback(int error, const char* description) {
 }
 
 int main() {
+    Graph graph;
+    graph.addNode(new Node2D(Eigen::Vector3<Float>(1,2,3)));
+    graph.addFactor(new FactorRelativeError2D(1,2));
+
+
     // Set GLFW error callback
     glfwSetErrorCallback(glfw_error_callback);
 
