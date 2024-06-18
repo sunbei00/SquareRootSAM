@@ -6,19 +6,13 @@
 #define SQUAREROOTSAM_CPP_NODE2D_H
 #include <NodeBase.h>
 
-class Node2D : public NodeBase{
+class Node2D : public Node<3>{
 public:
     ~Node2D() override;
-    Node2D();
-    Node2D(Eigen::VectorX<Float>);
-    uInt getDimension() override;
-    Eigen::VectorX<Float> getState() override;
-    void setState(Eigen::VectorX<Float>) override;
+    Node2D(const Eigen::VectorX<Float>&);
 
-private:
-    static constexpr uInt dim = 3;
-    Eigen::Matrix<Float,1,dim> state;
 };
+
 
 
 #endif //SQUAREROOTSAM_CPP_NODE2D_H

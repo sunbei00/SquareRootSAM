@@ -5,23 +5,36 @@
 #include "FactorBase.h"
 
 
-void FactorBase::setId(uInt id){
-    this->id = id;
-}
+
 uInt FactorBase::getId(){
     return id;
 }
 
 uInt FactorBase::nextId = 0;
-uInt FactorBase::getNextId(){
-    uInt ret = FactorBase::nextId;
+void FactorBase::setNextId(FactorBase* factor){
+    factor->id = FactorBase::nextId;
+    idMapping.insert({factor->id,factor});
     FactorBase::nextId++;
-    return ret;
 }
 
-FactorBase::FactorBase(uInt fromNode, uInt toNode) : fromNode(fromNode), toNode(toNode), id(FactorBase::getNextId()){}
+FactorBase::FactorBase(uInt fromNode, uInt toNode)
+: fromNode(fromNode), toNode(toNode) {
+    setNextId(this);
+}
+
+uInt FactorBase::getFromNode() {
+    return fromNode;
+}
+
+uInt FactorBase::getToNode() {
+    return toNode;
+}
+
+std::unordered_map<uInt, FactorBase*> FactorBase::idMapping;
 
 FactorBase::~FactorBase() = default;
+
+
 
 
 

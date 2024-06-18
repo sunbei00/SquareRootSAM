@@ -6,17 +6,13 @@
 #define SQUAREROOTSAM_CPP_FACTOR2D_H
 #include <FactorBase.h>
 
-class FactorRelativeError2D : public FactorBase{
+class FactorRelativeError2D : public Factor<3>{
 public:
-    FactorRelativeError2D(uInt fromNode, uInt toNode);
+    FactorRelativeError2D(uInt fromNode, uInt toNode, Eigen::MatrixX<Float> informationMatrix);
     ~FactorRelativeError2D() override;
-    uInt getDimension() override;
     Eigen::VectorX<Float> getResidual() override;
     Eigen::MatrixX<Float> getJacobian() override;
 
-private:
-    static constexpr uInt dim = 3;
-    Eigen::Matrix<Float,1,dim> measurement;
 };
 
 

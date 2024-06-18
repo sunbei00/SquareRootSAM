@@ -5,21 +5,28 @@
 #include "NodeBase.h"
 
 
-void NodeBase::setId(uInt id){
-    this->id = id;
-}
 uInt NodeBase::getId(){
     return id;
 }
 
 uInt NodeBase::nextId = 0;
-uInt NodeBase::getNextId(){
-    uInt ret = NodeBase::nextId;
+
+
+void NodeBase::setNextId(NodeBase* node){
+    node->id = NodeBase::nextId;
+    idMapping.insert({node->id, node});
     NodeBase::nextId++;
-    return ret;
 }
 
-NodeBase::NodeBase() : id(NodeBase::getNextId()){}
+NodeBase::NodeBase() {
+    setNextId(this);
+}
+
+Eigen::VectorX<Float> NodeBase::getState(uInt id) {
+    return idMapping[id]->getState();
+}
+
+std::unordered_map<uInt, NodeBase*> NodeBase::idMapping;
 NodeBase::~NodeBase() = default;
 
 

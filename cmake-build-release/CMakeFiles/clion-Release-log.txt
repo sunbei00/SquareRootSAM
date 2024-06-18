@@ -13,6 +13,6 @@
 -- Detecting CXX compile features - done
 -- Found OpenGL: opengl32   
 -- Found GLFW3: D:/KOREATECH/Library/glfw-3.4_binary/lib/libglfw3.a  
--- Configuring done (1.5s)
+-- Configuring done (3.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: D:/KOREATECH/code/SquareRootSAM/cmake-build-release

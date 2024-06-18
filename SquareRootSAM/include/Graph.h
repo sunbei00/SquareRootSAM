@@ -13,6 +13,8 @@ public:
     void addNode(NodeBase* node);
     void addFactor(FactorBase* factor);
 
+    void optimize();
+
     ~Graph();
 
 protected:

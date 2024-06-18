@@ -14,7 +14,19 @@ void glfw_error_callback(int error, const char* description) {
 int main() {
     Graph graph;
     graph.addNode(new Node2D(Eigen::Vector3<Float>(1,2,3)));
-    graph.addFactor(new FactorRelativeError2D(1,2));
+    graph.addNode(new Node2D(Eigen::Vector3<Float>(3,4,5)));
+    graph.addNode(new Node2D(Eigen::Vector3<Float>(3,4,5)));
+    graph.addNode(new Node2D(Eigen::Vector3<Float>(3,4,5)));
+    graph.addNode(new Node2D(Eigen::Vector3<Float>(3,4,5)));
+    graph.addNode(new Node2D(Eigen::Vector3<Float>(3,4,5)));
+    Eigen::MatrixX<Float> informationMatrix;
+    informationMatrix.resize(3,3);
+    informationMatrix << 1,2,3,4,5,6,7,8,9;
+    graph.addFactor(new FactorRelativeError2D(0,1, informationMatrix));
+
+    graph.optimize();
+
+    
 
 
     // Set GLFW error callback
